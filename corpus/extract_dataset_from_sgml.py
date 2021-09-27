@@ -22,6 +22,7 @@ for child in soup.children:
 
 	# 提取文本(text)，错别字位置(locations_list)，和正确的字(corrections_list)
 	text = child.contents[1].string
+	print(f"index = {index}, text = {text}")
 	locations_list = list(e.string for e in child.find_all('location'))
 	corrections_list = list(e.string for e in child.find_all('correction'))
 	
