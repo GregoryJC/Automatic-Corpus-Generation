@@ -27,7 +27,7 @@ for child in soup.children:
 	corrections_list = list(e.string for e in child.find_all('correction'))
 	
 	# 生成唯一id
-	id = "(generated-id="+str(index)+")"
+	id = "(generated-id=g"+str(index)+")"
 
 	# 将来加入TrainingInputAll.txt，例：
 	# (sighan15-id=3171)	虽然家长不能直接打扰老师在教书的时候，可是老师也会有一个默默被主义的压力。
