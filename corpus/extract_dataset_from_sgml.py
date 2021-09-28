@@ -42,9 +42,9 @@ for child in soup.children:
 
 	index += 1
 
-with open(generated_train_input_file) as file:
-    open(file,'w').writelines(generated_train_input_content)
+with open(generated_train_input_file,'w') as file:
+    file.writelines(generated_train_input_content)
 
-with open(generated_train_truth_file) as file:
-    open(file,'w').writelines(generated_train_truth_content)
+with open(generated_train_truth_file,'w') as file:
+    file.writelines(generated_train_truth_content)
 
